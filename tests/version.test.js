@@ -1,5 +1,5 @@
 import request from "supertest"; // Import request from supertest
-import app from "../app"; // Import your Express app
+import app from "../app"; // Adjust the path based on your file structure
 
 describe("GET /version", () => {
   it("responds with the app version", async () => {

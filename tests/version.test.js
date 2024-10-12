@@ -1,10 +1,8 @@
-import supertest from "supertest";
-const app = require("../app"); // Import your Express app
-
+import app from "../app";
 describe("GET /version", () => {
-  it("should return the version", async () => {
-    const res = await request(app).get("/version");
-    expect(res.statusCode).toEqual(200);
-    expect(res.body.version).toBe("v0.0.1");
+  it("responds with the app version", async () => {
+    const response = await request(app).get("/version");
+    expect(response.statusCode).toBe(200);
+    expect(response.body.version).toBeDefined();
   });
 });

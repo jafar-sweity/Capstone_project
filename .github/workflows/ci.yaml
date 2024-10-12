@@ -29,4 +29,3 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t mytest .
-# // the commit to push this for github is : 

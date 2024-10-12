@@ -22,4 +22,4 @@ jobs:
       - name: Build Docker image
         run: docker build -t mytest:${{github.sha}} .
       - name: Push Docker image
-        run: docker push jafarsw/mytest:latest
+        run: docker push jafarsw/mytest
